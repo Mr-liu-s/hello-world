@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>v-show</title>
+    <script src="js/vue.js"></script>
+</head>
+
+<body>
+    <div id="app">
+       <div v-show="flag">show me</div>
+    </div>
+    <div id="app1">
+        {{msg}}
+    </div>
+    <script>
+        var vm = new Vue({
+            el: "#app",
+            data: {
+               flag=true
+            }
+          
+        });
+    </script>
+</body>
+
+</html>
